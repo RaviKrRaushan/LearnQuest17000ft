@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="LearnQuest17000ft"
+run/main_scene="uid://0e0q0k15cr5q"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameState="*uid://bo74lxdsraqqp"
 
 [display]
 

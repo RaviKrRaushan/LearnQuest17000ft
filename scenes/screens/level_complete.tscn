@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dk6h6si47tyfv"]
+
+[ext_resource type="Script" uid="uid://2t2nj5218fwc" path="res://scripts/screens/level_complete.gd" id="1_1s4nt"]
+
+[node name="LevelComplete" type="Control" unique_id=48837832]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1s4nt")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1285579673]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.94509804, 0.8, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=1705929986]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=2071691813]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 30
+
+[node name="MessageLabel" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1694247500]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "Level Complete!"
+horizontal_alignment = 1
+
+[node name="NextButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=2024871415]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(340, 90)
+layout_mode = 2
+text = "NEXT LEVEL"
+
+[node name="HomeButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=272083127]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(340, 90)
+layout_mode = 2
+text = "HOME"
